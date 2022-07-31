@@ -96,6 +96,8 @@ while (true) {
         `${video.mp4}`,
         "-q:v",
         "3",
+        "-vf",
+        "scale=-1:720",
         "-f",
         "flv",
         `rtmp://a.rtmp.youtube.com/live2/${process.env.YOUTUBE_STREAM_KEY}`,
